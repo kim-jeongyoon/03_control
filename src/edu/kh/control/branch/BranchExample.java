@@ -61,10 +61,13 @@ public class BranchExample {
 		
 		for(int i = 1; i <= 100; i++) {
 			
-			if(i % 5 ==0 ) {
+			if(i % 5 ==0 ) {  // if문(1)
 				continue;
-			} else if (i > 40) {
-	
+			} 
+			
+			if (i > 40) { // if문(2)
+				          // i == 40 이 안되는 이유 위에 if문 때문에 40을 만난적이 없음
+				          // if문(1)과 if문(2) 순서를 바꾸는 것도 정답! 
 				break;
 			}
 			
